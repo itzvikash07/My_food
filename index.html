@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome|| Foods</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+<style>*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    background-image: url('./bg.jpg');
+    max-height: 1000px;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+.form{
+    display: flex;
+    align-items: center ;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+h1{
+    font-size: 100px;
+    color: rgb(10, 10, 10);
+    letter-spacing: 2px;
+
+}
+h3{
+    color: rgb(3, 3, 3);
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+#form{
+    /* background-color: rgba(255, 0, 0, 0.356); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 800px;
+}
+
+.input{
+    border-radius: 15px;
+    height: 50px;
+    font-size: 30px;
+    width: 600px;
+    background-color: rgba(214, 138, 138, 0.322);
+
+}
+textarea{
+    margin-top: 20px;
+    height: 300px;
+}
+.gender{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    font-size: 20px;
+    font-size: 30px;
+    color:black;
+    margin-right: 250px;
+    line-height: 40px;
+}
+#male,#female,#other{
+    margin-top: 15px;
+    margin-left: 15px;
+    height: 15px;
+    width: 15px;
+    font-weight: 500;
+}
+ #submit{
+     background-color: transparent;
+     margin-top: 10px;
+    height: 50px;
+    width: 100px;
+    border-radius: 15px;
+    font-size: 20px;
+    border: 2px solid black;
+
+}
+#submit:hover{
+    background-color:black;
+    color: white;
+    transition: 2s;
+}
+span{
+    font-size: 30px;
+    color: rgb(5, 5, 5);
+    font-weight: bold;
+
+}
+.con2{ 
+    font-size: 20px;
+   padding: 30px;
+       
+
+}</style>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h1>This is for Assignment</h1>
+            <h3>Please enter your detailsy</h3>
+            <form action="index.php" method="POST" id="form">
+               <span>Name:</span>  <input type="text" name="name" class="input" placeholder="Enter your Name ">
+               <span>Email:</span>  <input type="email" name="email" class="input" placeholder="Enter your email ">
+               <div class="gender"> <span>Gender:</span> <input type="radio" id="male" name="gender" value="male">
+                 <label for="male">Male</label><br>
+                 <input type="radio" id="female" name="gender" value="female">
+                 <label for="female">Female</label><br>
+                 <input type="radio" id="other" name="gender" value="other">
+                 <label for="other">Other</label></div>
+                 <label for="con2"><span>Hobbies</span></label>
+                 <div class="con2"><input type="checkbox" name="hobby1"  value="Cricket" id="v">Cricket
+                    <input type="checkbox" name="hobby1"  value="BGMI" id="v"> BGMI
+                    <input type="checkbox" name="hobby3"  value="Coding" id=""> Coding
+                    <input type="checkbox" name="hobby4"  value="Dancing" id=""> Dancing
+                    <input type="checkbox" name="hobby5"  value="Singing" id=""> Singing
+                    <input type="checkbox" name="hobby6"  value="Traveling" id=""> Traveling</div>
+                 <label for="menu" id="input"><span> City:</span></label>
+                 <select id="order" class="input" name="menu">
+                     <option value="pizza" class="input">Mathura</option>
+                     <option value="burger" class="input">Goverdhan</option>
+                     <option value="france_fries" class="input"> Agra</option>
+                     <option value="paneer masala" class="input"> Delhi</option>
+                     <option value="momos" selected class="input">Aligarh</option>
+                     <option value="butter chicken" class="input"> Other</option>
+                     
+                   </select>
+                 <textarea name="address" class="input" cols="30" rows="10" placeholder="Comment"></textarea>
+                 <div class="co"><input type="submit" value="submit" id="submit">
+                 <input type="reset" value="reset"  id="submit"></div>
+
+             </form>
+        </div>
+    </div>
+</body>
+</html>

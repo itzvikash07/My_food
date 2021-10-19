@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    background-image: url('./bg.jpg');
+    max-height: 1000px;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+.form{
+    display: flex;
+    align-items: center ;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+h1{
+    font-size: 100px;
+    color: white;
+    letter-spacing: 2px;
+
+}
+h3{
+    color: white;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+#form{
+    /* background-color: rgba(255, 0, 0, 0.356); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 800px;
+}
+
+.input{
+    border-radius: 15px;
+    height: 50px;
+    font-size: 30px;
+    width: 600px;
+    background-color: rgba(214, 138, 138, 0.322);
+
+}
+textarea{
+    margin-top: 20px;
+    height: 300px;
+}
+.gender{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    font-size: 20px;
+    font-size: 30px;
+    color:black;
+    margin-right: 250px;
+    line-height: 40px;
+}
+#male,#female,#other{
+    margin-top: 15px;
+    margin-left: 15px;
+    height: 15px;
+    width: 15px;
+    font-weight: 500;
+}
+ #submit{
+     background-color: transparent;
+     margin-top: 10px;
+    height: 50px;
+    width: 100px;
+    border-radius: 15px;
+    font-size: 20px;
+    border: 2px solid black;
+
+}
+#submit:hover{
+    background-color:black;
+    color: white;
+    transition: 2s;
+}
+span{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+
+}
